@@ -17,8 +17,16 @@
   --color-transparent: transparent;
   --color-current: currentColor;
 
-  --font-sans: 'Geist Sans', system-ui, sans-serif;
+  --font-sans: 'Geist', system-ui, sans-serif;
   --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  /* En el diseño todos los textos usan interlineado 1.6 salvo que se indique otro. */
+  --text-xs--line-height: 1.6;
+  --text-sm--line-height: 1.6;
+  --text-base--line-height: 1.6;
+  --text-lg--line-height: 1.6;
+  --text-xl--line-height: 1.6;
+  --text-2xl--line-height: 1.6;
 
   /* La navegación pasa a una sola fila a partir de 720 px. */
   --breakpoint-nav: 45rem;

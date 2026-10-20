@@ -13,14 +13,16 @@ export function Nav() {
   // En móvil la lista se desplaza en horizontal: centra el enlace activo para que se vea.
   useEffect(() => {
     const list = listRef.current;
-    if (!list || !activeId || list.scrollWidth <= list.clientWidth) return;
-    const link = list.querySelector<HTMLElement>(`a[href="#${activeId}"]`);
-    if (!link) return;
+    // Al volver al hero (sin sección activa) se regresa al principio de la lista.
+    if (!list || list.scrollWidth <= list.clientWidth) return;
+    const link = activeId ? list.querySelector(`a[href="#${activeId}"]`) : null;
+    const linkRect = link?.getBoundingClientRect();
+    const listRect = list.getBoundingClientRect();
+    const left = linkRect
+      ? list.scrollLeft + linkRect.left - listRect.left - (listRect.width - linkRect.width) / 2
+      : 0;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    list.scrollTo({
-      left: link.offsetLeft - (list.clientWidth - link.offsetWidth) / 2,
-      behavior: reduceMotion ? 'auto' : 'smooth',
-    });
+    list.scrollTo({ left, behavior: reduceMotion ? 'auto' : 'smooth' });
   }, [activeId]);
 
   return (
