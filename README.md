@@ -5,7 +5,7 @@ Una sola página con proyectos en producción, experiencia, tecnologías, trayec
 inspirada en la estética de los planos técnicos: cuadrícula de fondo, reglas graduadas y un
 cajetín con la ficha técnica.
 
-**Web publicada:** <https://eduardo-cebrian.netlify.app>
+**Web publicada:** <https://eduardocebrian.dev>
 
 ![Captura del portafolio: hero con el nombre, el rol y la ficha técnica](docs/captura.png)
 
