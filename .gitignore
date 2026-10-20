@@ -1,0 +1,30 @@
+# Dependencias
+node_modules
+
+# Build
+dist
+*.tsbuildinfo
+
+# Netlify
+.netlify
+
+# Logs y sistema
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Informes locales de Lighthouse
+lighthouse-*.html
+lighthouse-*.json
+
+# Diseño de referencia (no forma parte de la app)
+diseno-referencia-portafolio.html
+
+# Capturas originales sin optimizar (ver npm run screenshots)
+capturas/*
+!capturas/.gitkeep
