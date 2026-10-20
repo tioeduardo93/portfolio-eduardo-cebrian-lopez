@@ -12,7 +12,7 @@ export const LINKS = {
   cv: '/CV_Eduardo_Cebrian_Desarrollador_Web.pdf',
   projects: {
     rueda: {
-      web: 'https://rueda-proyecto.netlify.app/',
+      web: 'https://rueda-eduardo-cebrian.netlify.app/',
       code: 'https://github.com/tioeduardo93/Rueda-Proyecto-de-portafolio',
     },
     guacamaya: {

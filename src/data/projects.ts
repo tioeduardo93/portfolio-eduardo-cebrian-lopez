@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     featured: true,
     links: LINKS.projects.rueda,
     screenshot: {
-      alt: 'Buscador de coches Rueda: listado de coches de segunda mano con filtros por marca, modelo y precio, y tarjetas con precio, cuota mensual y kilómetros.',
+      alt: 'Buscador de coches Rueda: listado de coches de segunda mano con filtros por marca, modelo y precio, y tarjetas con foto, precio, cuota mensual y kilómetros de cada coche.',
       placeholder: 'Captura · Buscador de coches · 1600×1000',
     },
   },
