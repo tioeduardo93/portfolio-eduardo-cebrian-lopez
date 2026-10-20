@@ -30,7 +30,7 @@ export function Nav() {
       <div className="site-container flex flex-wrap items-center justify-between gap-x-4 py-2.5">
         <a
           href="#inicio"
-          aria-label="Eduardo Cebrián López, inicio"
+          aria-label="EC · Eduardo Cebrián López, ir al inicio"
           className="inline-flex size-11 items-center justify-center rounded-[9px] border border-line2 font-mono text-[15px] font-bold tracking-[0.04em] text-tx transition-colors duration-200 logo-texture hover:border-accent"
         >
           EC
