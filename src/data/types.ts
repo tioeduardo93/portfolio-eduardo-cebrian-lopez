@@ -1,7 +1,10 @@
-/** Sección navegable de la página. */
-export interface NavSection {
+/** Sección de la página: alimenta la navegación y la cabecera de la sección. */
+export interface SectionInfo {
   id: string;
+  /** Texto del enlace de navegación y de la etiqueta «01 — Proyectos». */
   label: string;
+  title: string;
+  subtitle?: string;
 }
 
 /** Columnas que ocupa una tarjeta en la rejilla de 12 columnas (desde 768 px). */

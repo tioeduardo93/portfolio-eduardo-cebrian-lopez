@@ -5,7 +5,12 @@ interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
 }
 
 /** Base común de los iconos de trazo (24×24). Son decorativos: el texto lo da el enlace. */
-function Icon({ size = 18, strokeWidth = 2, children, ...props }: IconProps & { children: ReactNode }) {
+function Icon({
+  size = 18,
+  strokeWidth = 2,
+  children,
+  ...props
+}: IconProps & { children: ReactNode }) {
   return (
     <svg
       width={size}

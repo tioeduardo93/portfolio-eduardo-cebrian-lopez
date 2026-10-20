@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { sectionHeadingId } from '../../data/navigation';
+import { sectionHeadingId } from '../../data/sections';
 
 interface SectionProps {
   id: string;

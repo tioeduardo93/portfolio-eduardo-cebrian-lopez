@@ -23,17 +23,11 @@ export const TECH_SHEET = {
   footer: ['ESCALA 1:1', 'HOJA 01/01'],
 } as const;
 
+/** Texto de «Sobre mí». El título está en sections.ts. */
 export const ABOUT = {
-  title: 'De los planos al código',
   highlight:
     'Empecé estudiando Ingeniería Civil y trabajando en herrería, donde aprendí a construir con precisión a partir de planos.',
   body: 'Desde 2020 aplico esa misma mentalidad al código. Trabajo en remoto con equipos internacionales, me adapto rápido y aprendo nuevas tecnologías con facilidad.',
   /** Trayectoria; el último paso se resalta con el color de acento. */
   path: ['Ingeniería', 'Herrería', 'Código · 2020'],
-} as const;
-
-export const CONTACT = {
-  /** El signo de cierre «?» se pinta con el color de acento. */
-  title: '¿Hablamos',
-  text: 'Si buscas a alguien que lleve una web del diseño a producción, escríbeme.',
 } as const;

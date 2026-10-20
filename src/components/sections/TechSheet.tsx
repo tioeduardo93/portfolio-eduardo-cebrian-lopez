@@ -12,10 +12,7 @@ export function TechSheet({ className }: TechSheetProps) {
   return (
     <aside
       aria-label="Ficha técnica"
-      className={cn(
-        'relative overflow-hidden rounded-[14px] border border-line2 bg-s1',
-        className,
-      )}
+      className={cn('relative overflow-hidden rounded-[14px] border border-line2 bg-s1', className)}
     >
       <div className="flex items-end gap-[18px] border-b border-line2 px-[22px] py-6">
         <span className="text-[88px] leading-[0.82] font-semibold tracking-[-0.05em] text-accent">

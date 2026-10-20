@@ -1,5 +1,5 @@
 import { LINKS, isAvailableLink } from '../../data/links';
-import { sectionHeadingId } from '../../data/navigation';
+import { sectionHeadingId } from '../../data/sections';
 import { PROFILE } from '../../data/profile';
 import { Button } from '../ui/Button';
 import { IconButton } from '../ui/IconButton';
@@ -13,7 +13,7 @@ export function Hero() {
       id="inicio"
       className="blueprint-grid relative overflow-hidden border-b border-line pt-16 pb-20 lg:py-28"
     >
-      <div className="site-container relative grid gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-end lg:gap-18">
+      <div className="relative site-container grid gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-end lg:gap-18">
         <div>
           <p className="inline-flex animate-rise flex-wrap items-center gap-x-3 gap-y-2 font-mono text-[13px] text-mu">
             <MapPinIcon size={16} />

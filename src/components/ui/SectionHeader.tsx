@@ -1,14 +1,14 @@
-import { sectionHeadingId } from '../../data/navigation';
+import { getSection, sectionHeadingId } from '../../data/sections';
 import { SectionLabel } from './SectionLabel';
 
 interface SectionHeaderProps {
   sectionId: string;
-  title: string;
-  subtitle?: string;
 }
 
 /** Cabecera común de sección: etiqueta con regla, título h2 y subtítulo opcional. */
-export function SectionHeader({ sectionId, title, subtitle }: SectionHeaderProps) {
+export function SectionHeader({ sectionId }: SectionHeaderProps) {
+  const { title, subtitle } = getSection(sectionId);
+
   return (
     <div className="reveal">
       <SectionLabel sectionId={sectionId} />

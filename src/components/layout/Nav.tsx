@@ -1,9 +1,10 @@
 import { useEffect, useRef } from 'react';
-import { NAV_SECTIONS, sectionNumber } from '../../data/navigation';
+import { SECTIONS } from '../../data/sections';
 import { useActiveSection } from '../../hooks/useActiveSection';
 import { cn } from '../../lib/cn';
+import { twoDigits } from '../../lib/format';
 
-const SECTION_IDS = NAV_SECTIONS.map((section) => section.id);
+const SECTION_IDS = SECTIONS.map((section) => section.id);
 
 export function Nav() {
   const activeId = useActiveSection(SECTION_IDS);
@@ -28,7 +29,7 @@ export function Nav() {
         <a
           href="#inicio"
           aria-label="Eduardo Cebrián López, inicio"
-          className="logo-texture inline-flex size-11 items-center justify-center rounded-[9px] border border-line2 font-mono text-[15px] font-bold tracking-[0.04em] text-tx transition-colors duration-200 hover:border-accent"
+          className="inline-flex size-11 items-center justify-center rounded-[9px] border border-line2 font-mono text-[15px] font-bold tracking-[0.04em] text-tx transition-colors duration-200 logo-texture hover:border-accent"
         >
           EC
         </a>
@@ -36,9 +37,9 @@ export function Nav() {
         <nav aria-label="Secciones" className="-mx-2 w-[calc(100%+16px)] nav:mx-0 nav:w-auto">
           <ul
             ref={listRef}
-            className="flex gap-0.5 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="flex [scrollbar-width:none] gap-0.5 overflow-x-auto [&::-webkit-scrollbar]:hidden"
           >
-            {NAV_SECTIONS.map(({ id, label }) => {
+            {SECTIONS.map(({ id, label }, index) => {
               const isActive = id === activeId;
               return (
                 <li key={id} className="shrink-0">
@@ -57,7 +58,7 @@ export function Nav() {
                         isActive ? 'text-accent' : 'text-di',
                       )}
                     >
-                      {sectionNumber(id)}
+                      {twoDigits(index + 1)}
                     </span>
                     {label}
                   </a>
