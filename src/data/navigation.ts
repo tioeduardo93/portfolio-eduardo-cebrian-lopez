@@ -14,3 +14,8 @@ export function sectionNumber(id: string): string {
   const index = NAV_SECTIONS.findIndex((section) => section.id === id);
   return String(index + 1).padStart(2, '0');
 }
+
+/** Id del título de una sección, para enlazarlo con aria-labelledby. */
+export function sectionHeadingId(id: string): string {
+  return `${id}-titulo`;
+}
