@@ -28,3 +28,6 @@ diseno-referencia-portafolio.html
 # Capturas originales sin optimizar (ver npm run screenshots)
 capturas/*
 !capturas/.gitkeep
+
+# Configuración local de Claude Code
+.claude
