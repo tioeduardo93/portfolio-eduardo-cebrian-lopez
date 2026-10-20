@@ -32,7 +32,7 @@ export function ProjectMedia({ project, screenshot }: ProjectMediaProps) {
             height={size.height}
             loading="lazy"
             decoding="async"
-            className="absolute inset-0 size-full object-cover object-top"
+            className="absolute inset-0 size-full object-cover object-[left_top]"
           />
         ) : (
           <>

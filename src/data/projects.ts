@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     featured: true,
     links: LINKS.projects.rueda,
     screenshot: {
-      alt: 'Buscador de coches de segunda mano: listado de vehículos con filtros por marca, precio, kilómetros, año y combustible.',
+      alt: 'Buscador de coches Rueda: listado de coches de segunda mano con filtros por marca, modelo y precio, y tarjetas con precio, cuota mensual y kilómetros.',
       placeholder: 'Captura · Buscador de coches · 1600×1000',
     },
   },
@@ -35,7 +35,7 @@ export const PROJECTS: Project[] = [
     span: 6,
     links: LINKS.projects.guacamaya,
     screenshot: {
-      alt: 'Página de inicio de Guacamaya Social Media, agencia de marketing digital.',
+      alt: 'Página de inicio de Guacamaya Social Media con el titular «Videos, management, ads & design» y botones para pedir presupuesto.',
       placeholder: 'Captura · Guacamaya Social Media',
     },
   },
@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     span: 8,
     links: LINKS.projects.brazza,
     screenshot: {
-      alt: 'Página de inicio de Brazza Steaks, restaurante de carnes a la brasa.',
+      alt: 'Portada de Brazza Steaks on Stakes: el logotipo del restaurante sobre un vídeo de leña para la brasa.',
       placeholder: 'Captura · Brazza Steaks',
     },
   },

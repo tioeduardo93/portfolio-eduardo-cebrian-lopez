@@ -7,7 +7,8 @@
  *      (por ejemplo capturas/brazza.png). Formatos: png, jpg, jpeg o webp.
  *   2. Ejecuta: npm run screenshots
  *
- * El recorte se ancla arriba para conservar la cabecera de la web.
+ * El recorte se ancla arriba para conservar la cabecera de la web. En la tarjeta,
+ * si el hueco no es 16:10 (destacado en escritorio), se recorta por la derecha.
  */
 import { mkdir, readdir } from 'node:fs/promises';
 import { basename, extname, join } from 'node:path';
