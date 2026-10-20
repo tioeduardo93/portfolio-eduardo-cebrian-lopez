@@ -81,6 +81,17 @@
   }
 }
 
+/* Sección a dos columnas en escritorio: cabecera (4/12) y contenido (8/12). */
+@utility split-layout {
+  display: grid;
+  gap: 40px;
+
+  @variant lg {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    gap: 72px;
+  }
+}
+
 /* Cuadrícula de plano del hero, difuminada con una máscara radial. */
 @utility blueprint-grid {
   &::before {
